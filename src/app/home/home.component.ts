@@ -3,11 +3,12 @@ import { CommentComponent } from '../components/comment/comment.component';
 import { CommentService } from '../services/comment.service';
 import { Comment } from '../interfaces/comment.interface';
 import { CommonModule } from '@angular/common';
+import { CommentFormComponent } from '../components/comment-form/comment-form.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, CommentComponent],
+  imports: [CommonModule, CommentComponent, CommentFormComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

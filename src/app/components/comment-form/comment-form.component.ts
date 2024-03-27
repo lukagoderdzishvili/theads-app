@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-comment-form',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './comment-form.component.scss'
 })
 export class CommentFormComponent {
-
+  @Input() placeholder = 'Write something...';
+  @Input() buttonText = 'Create';
 }
